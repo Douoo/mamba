@@ -1,9 +1,9 @@
 /* Accordion */
 .accordion-panel {
     position: relative;
-    border-width: 3px 3px 3px 8px;
+    border-width: 4px 4px 4px 12px;
     border-style: solid;
-    border-radius: 21px;
+    border-radius: 30rem;
     border-color: var(--clr-primary);
     padding: 1rem 4rem;
     margin-bottom: 1rem;
@@ -33,7 +33,7 @@
     background-size: 50%;
     background-position: center;
     padding: 1rem;
-    border: 1px solid var(--clr-primary);
+    border: 2px solid var(--clr-primary);
     border-radius: 0.4rem;
 }
 

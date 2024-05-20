@@ -5,7 +5,7 @@ function Features() {
     <section id="#tokenomics" className="features">
       <div className="grid lg:grid-flow-col lg:place-items-start">
         <div className="container--features">
-          <h1 className="heading-lg clr-primary">
+          <h1 className="heading-lg clr-primary uppercase">
             Mamba <br />
             <span className="clr-secondary">Tokenomics</span>
           </h1>
