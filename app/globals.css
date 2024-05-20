@@ -251,9 +251,6 @@ body {
     margin: 14rem 2rem 0;
   }
 
-  /* .nav-toggle {
-      display: block;
-  } */
 
   .nav-primary,
   .nav-secondary {
@@ -340,11 +337,6 @@ header::after {
   }
 }
 
-/* .hero__img {
-  position: absolute;
-  top: 5rem;
-  left: 10%;
-} */
 
 @media(min-width: 45rem) {
 
@@ -362,36 +354,13 @@ header::after {
 /* About  */
 .about {
   position: relative;
-  /* height: 65rem; */
   overflow: hidden;
   display: grid;
   place-items: center;
-  /* background-image: url(/images/red_planet.png), url(/images/green-ring-planet.png);
-  background-repeat: no-repeat;
-  background-size: 28%, 25%;
-  background-position: top left, top 5rem right -1.5rem; */
 
 }
 
-.about::before {
-  /* content: '';
-  position: absolute;
-  inset: 0;
-  transform: translate(-1.5rem, 24rem);
-  background-image: url(/images/gold_coins-left.png);
-  background-repeat: no-repeat;
-  background-size: 25%; */
-}
 
-.about::after {
-  /* content: '';
-  position: absolute;
-  inset: 0;
-  background-image: url(/images/gold_coins-right.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  transform: translate(69%, 24rem) rotate(15deg) */
-}
 
 .about--card {
   max-width: 900px;
@@ -401,16 +370,6 @@ header::after {
   padding: 1.5rem;
 }
 
-/* .about--card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  transform: translate(74%, 68%);
-  background-image: url(/images/mamba_crown.png);
-  background-repeat: no-repeat;
-  background-size: 30%;
-  z-index: 10;
-} */
 
 @media(min-width: 60rem) {
   .about {
@@ -562,8 +521,6 @@ header::after {
 
 .roadmap-flow {
   position: relative;
-  /* max-width: 800px; */
-  /* width: 85%; */
   margin-inline: auto;
   padding: 40px 20px;
 }
@@ -632,7 +589,7 @@ header::after {
   .roadmap-item::after {
     top: 0;
     left: 107%;
-    background-color: var(--clr-neutral-900);
+    background-color: var(--clr-bg);
   }
 
 
@@ -729,7 +686,7 @@ header::after {
     justify-content: space-between;
     width: 90%;
     position: relative;
-    bottom: -5rem; 
+    bottom: -5rem;
     width: min(85%, 900px);
     margin-inline: auto;
   }
