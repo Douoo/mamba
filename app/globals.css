@@ -7,6 +7,7 @@
 :root {
   --clr-primary: hsl(194, 100%, 43%);
   --clr-secondary: hsl(44, 100%, 50%);
+  --clr-bg: rgb(48, 34, 59);
 
   --clr-neutral-900: #010101;
   --clr-neutral-100: #fff;
@@ -113,7 +114,7 @@ select {
 
 body {
   color: var(--clr-neutral-100);
-  background-color: var(--clr-neutral-900);
+  background-color: var(--clr-bg);
   font-size: var(--fs-body);
   background-image: url(/images/background.png);
   background-repeat: no-repeat;
@@ -599,7 +600,7 @@ header::after {
   top: -1.5rem;
   left: 0;
   margin-left: -10px;
-  background-color: rgb(48, 34, 59);
+  background-color: var(--clr-bg);
   z-index: 10;
 }
 
@@ -673,8 +674,8 @@ header::after {
 .footer::after {
   content: '';
   position: absolute;
-  inset: 0 0 -2rem -10.5rem;
-  background-image: url(/images/mamba_footer.png);
+  inset: 0;
+  background-image: url(/images/mamba_footer_new.png);
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -685,10 +686,21 @@ header::after {
   place-items: center;
   text-align: center;
   gap: 1rem;
-  position: relative;
-  bottom: 8rem;
-  right: 2rem;
   z-index: 10;
+}
+
+@media(max-width: 45rem) {
+
+  .footer::after {
+    background-position: -5rem;
+    z-index: -1;
+  }
+
+  .footer-container {
+    position: relative;
+    bottom: 8rem;
+    right: 10rem;
+  }
 }
 
 .nav--footer {
@@ -699,16 +711,17 @@ header::after {
   align-items: center;
 }
 
-@media(min-width: 50rem) {
+@media(min-width: 45rem) {
 
   .footer {
-    min-height: 30rem;
+    min-height: 35rem;
     margin-top: 0;
+    padding-bottom: 12rem;
   }
 
   .footer::after {
-    inset: 0 0 -4rem -6rem;
-    background-image: url(/images/mamba_footer.png);
+    inset: 0 0 -12rem 0;
+    background-image: url(/images/mamba_footer_new.png);
   }
 
   .footer-container {
@@ -716,10 +729,9 @@ header::after {
     justify-content: space-between;
     width: 90%;
     position: relative;
-    right: 8.75%;
-    bottom: 15rem;
+    bottom: -5rem; 
     width: min(85%, 900px);
-    margin-left: auto;
+    margin-inline: auto;
   }
 
 
@@ -736,13 +748,8 @@ header::after {
     margin-top: 0;
   }
 
-  .footer-container {
-
-    right: 15%;
-  }
-
   .footer::after {
-    inset: 0;
-    background-image: url(/images/mamba_footer.png);
+    inset: 0 0 -18rem 0;
   }
+
 }
