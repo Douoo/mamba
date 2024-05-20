@@ -1,12 +1,12 @@
 import styles from "./Button.module.css";
 
-function Button({ text, type, onClick }) {
+function Button({ children, type, onClick }) {
   return (
     <button
       onClick={onClick}
       className={`uppercase ${styles.btn} ${styles[`${`btn-` + type}`]} `}
     >
-      {text}
+      {children}
     </button>
   );
 }

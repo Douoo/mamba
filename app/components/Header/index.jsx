@@ -15,7 +15,7 @@ function Header() {
         <nav className="nav-list">
           <ul className="nav-primary">
             <li>
-              <Button type="secondary" text="Home" />
+              <Button type="secondary">Home</Button>
               {/* <a href="#">Home</a> */}
             </li>
             <li>
@@ -53,7 +53,7 @@ function Header() {
               <span className="sr-only">Telegram</span>
             </IconButton>
             <li>
-              <Button text="Buy Mamba" type="primary" />
+              <Button type="primary">Buy Mamba</Button>
             </li>
           </ul>
         </nav>
@@ -76,7 +76,7 @@ function Header() {
             Blast off with Mamba to The Moon! Explore the cosmos and beyond with
             us. Join the adventure now!
           </p>
-          <Button text="Explore Now" type="primary" />
+          <Button type="primary">Explore Now</Button>
         </div>
       </div>
     </header>

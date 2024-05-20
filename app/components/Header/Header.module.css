@@ -1,0 +1,13 @@
+.active {
+    font-family: "Titan One", sans-serif;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-width: 3px 3px 3px 8px;
+    border-style: solid;
+    color: var(--clr-secondary);
+    border-color: var(--clr-secondary);
+    border-radius: 21px;
+}

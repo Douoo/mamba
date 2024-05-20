@@ -707,13 +707,8 @@ header::after {
   }
 
   .footer::after {
-    content: '';
-    position: absolute;
     inset: 0 0 -4rem -6rem;
     background-image: url(/images/mamba_footer.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
   }
 
   .footer-container {
@@ -730,5 +725,24 @@ header::after {
 
   .nav--footer {
     flex-direction: row;
+  }
+}
+
+@media(min-width: 1400px) {
+
+
+  .footer {
+    min-height: 40rem;
+    margin-top: 0;
+  }
+
+  .footer-container {
+
+    right: 15%;
+  }
+
+  .footer::after {
+    inset: 0;
+    background-image: url(/images/mamba_footer.png);
   }
 }
