@@ -7,6 +7,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      maxWidth: {
+        custom: "70rem", // Custom value (e.g., 1152px)
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

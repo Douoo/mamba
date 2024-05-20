@@ -1,0 +1,80 @@
+/* Accordion */
+.accordion-panel {
+    position: relative;
+    border-width: 3px 3px 3px 8px;
+    border-style: solid;
+    border-radius: 21px;
+    border-color: var(--clr-primary);
+    padding: 1rem 4rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-title {
+    font-size: 1.5rem;
+    font-family: var(--ff-title);
+    color: var(--clr-primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.accordion-title>button {
+    text-transform: uppercase;
+}
+
+
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(/icons/add.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
+    padding: 1rem;
+    border: 1px solid var(--clr-primary);
+    border-radius: 0.4rem;
+}
+
+.icon.active {
+    background-image: url(/icons/remove.svg);
+}
+
+.accordion-trigger::after {
+    rotate: 0deg;
+    translate: 0 -4.85rem;
+}
+
+.accordion-trigger[aria-expanded="true"]::after {
+    background-image: url(/icons/remove.svg);
+    width: 20;
+    height: 20;
+}
+
+
+
+.accordion-content {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 500ms;
+}
+
+.accordion-content.active {
+    grid-template-rows: 1fr;
+}
+
+.accordion-content>div {
+    overflow: hidden;
+}
+
+
+@media(min-width:45rem) {
+    .accordion-panel {
+        padding-block: 2rem;
+    }
+
+    .accordion-title {
+        font-size: 2.75rem;
+    }
+}
